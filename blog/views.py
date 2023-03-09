@@ -1,5 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-def hello(response):
-    return render(response, 'hello.html', {'name': 'Luis'})
+
+def home(request):
+    return render(request, 'homepage.html')
+
+def signup(request):
+    return render(request, 'signup.html')
+
+def login(request):
+    return render(request, 'login.html')

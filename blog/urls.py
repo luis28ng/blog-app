@@ -3,5 +3,7 @@ from . import views
 
 #URL CONFIGURATION
 urlpatterns = [
-    path('hello/', views.hello)
+    path('', views.home, name="Home Page"),
+    path('signup/', views.signup, name="Sign Up"),
+    path('login/', views.login, name="Login"),
 ]
